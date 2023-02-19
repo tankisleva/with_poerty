@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "with-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Oleg Malyshev <malyshev@jivosite.com>"]
+readme = "README.md"
+packages = [{include = "with_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.1"
+selene = "2.0.0b16"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.16.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
